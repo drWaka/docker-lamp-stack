@@ -1,0 +1,9 @@
+version: '3'
+services:
+  www:
+    image: 8.2.4-apache
+    volumes:
+      - "./:/var/www/html"
+    ports:
+      - 8080:80
+      - 8443:443
